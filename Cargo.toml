@@ -1,0 +1,10 @@
+[package]
+name = "sigmaos_telnet"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[lib]
+name = "sigmaos_telnet"
+path = "src/lib.rs"
