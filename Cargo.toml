@@ -2,9 +2,10 @@
 name = "sigmaos_telnet"
 version = "0.1.0"
 edition = "2021"
-
-[dependencies]
+description = "SigmaOS telnet protocol model: options, commands, sessions, terminal handling"
 
 [lib]
 name = "sigmaos_telnet"
 path = "src/lib.rs"
+
+[dependencies]
