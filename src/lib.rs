@@ -1,14 +1,7 @@
-//! SigmaOS-telnet — telnet protocol model.
-//!
-//! Models the telnet protocol: options negotiation, commands (DO/DONT/WILL/WONT),
-//! connection state, and terminal handling. Deterministic and std-only.
+//! SigmaOS-telnet — Telnet client model.
 
-pub mod option;
-pub mod command;
-pub mod session;
-pub mod terminal;
+pub mod util;
+pub mod options;
 
-pub use option::{TelnetOption, OptionState};
-pub use command::{TelnetCommand, CommandCode};
-pub use session::{TelnetSession, SessionState};
-pub use terminal::{TerminalType, TerminalMode};
+pub use util::{Telnet, Session};
+pub use options::{TelnetOptions, Mode};
